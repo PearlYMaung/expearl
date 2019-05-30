@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    android:weightSum="5">
+  <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="CrowdSource"
+        android:textSize="@dimen/login_font_size"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:layout_marginTop="64dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="4">
+       <!-- <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:background="@color/colorWhite"
+            android:text="Login with Facebook"
+            android:textAppearance="@style/TextAppearance.AppCompat"/>-->
+       <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+        <Button
+            android:id="@+id/btn_gg_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:background="@color/colorWhite"
+            android:text="Login with Google"
+            android:textAppearance="@style/TextAppearance.AppCompat"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
